@@ -1,0 +1,10 @@
+{
+    "cmake.generator": "Visual Studio 17 2022",
+    "cmake.configureOnOpen": true,  // Для автоматической настройки при открытии
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.configureSettings": {
+      "CMAKE_C_COMPILER": "cl.exe",
+      "CMAKE_CXX_COMPILER": "cl.exe"
+    }
+  }
+  
