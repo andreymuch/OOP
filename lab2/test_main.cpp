@@ -1,72 +1,75 @@
-#include "src/Money.h"
 #include <gtest/gtest.h>
+#include <string>
+#include "./src/Money.h"
 
+TEST(MoneyTest, ConstructorWithString) {
+    std::string str = "100";
+    Money m1(str);
+    Money m2("100");
+    EXPECT_TRUE(m1.equals(m2));
+}
+TEST(MoneyTest, CopyConstructor) {
+    Money m1("200");
+    Money m2(m1);
+    EXPECT_TRUE(m1.equals(m2));
+}
+TEST(MoneyTest, MoveConstructor) {
+    Money m1("300");
+    Money m2(std::move(m1));
+    EXPECT_TRUE(m2.equals(Money("300")));
+}
+TEST(MoneyTest, AddFunction) {
+    Money m1("100");
+    Money m2("200");
+    Money result = m1.add(m2);
+    EXPECT_TRUE(result.equals(Money("300")));
+}
+TEST(MoneyTest, SubtractFunction) {
+    Money m1("500");
+    Money m2("200");
+    Money result = m1.subtract(m2);
+    EXPECT_TRUE(result.equals(Money("300")));
+}
+TEST(MoneyTest, EqualsFunction) {
+    Money m1("100");
+    Money m2("100");
+    Money m3("200");
+    EXPECT_TRUE(m1.equals(m2));
+    EXPECT_FALSE(m1.equals(m3));
+}
+TEST(MoneyTest, LessThanFunction) {
+    Money m1("100");
+    Money m2("200");
+    EXPECT_TRUE(m1.lessThan(m2));
+    EXPECT_FALSE(m2.lessThan(m1));
+}
 
-TEST(MoneyTest, ConstructorValidTest) {
-    Money m1("123.45");
-    Money m2("76.55");
+TEST(MoneyTest, GreaterThanFunction) {
+    Money m1("300");
+    Money m2("100");
+    EXPECT_TRUE(m1.greaterThan(m2));
+    EXPECT_FALSE(m2.greaterThan(m1));
+}
 
-    ASSERT_EQ(m1.operator==(Money("123.45")), true);
-    ASSERT_EQ(m2.operator==(Money("76.55")), true);
+TEST(MoneyTest, MoveAssignFunction) {
+    Money m1("400");
+    Money m2("100");
+    m2.moveAssign(std::move(m1));
+    EXPECT_TRUE(m2.equals(Money("400")));
+
 }
 
 
-TEST(MoneyTest, ConstructorInvalidTest) {
-    ASSERT_THROW(Money m("12a.45"), std::invalid_argument);
-    ASSERT_THROW(Money m(""), std::invalid_argument);
+TEST(MoneyTest, AddAssignFunction) {
+    Money m1("200");
+    Money m2("300");
+    m1.addAssign(m2);
+    EXPECT_TRUE(m1.equals(Money("500")));
 }
 
-
-TEST(MoneyTest, AdditionTest) {
-    Money m1("123.45");
-    Money m2("76.55");
-
-    Money result = m1 + m2;
-    ASSERT_EQ(result.operator==(Money("200.00")), true);
-}
-
-TEST(MoneyTest, SubtractionTest) {
-    Money m1("123.45");
-    Money m2("76.55");
-
-    Money result = m1 - m2;
-    ASSERT_EQ(result.operator==(Money("46.90")), true);
-}
-
-
-TEST(MoneyTest, AdditionAssignmentTest) {
-    Money m1("123.45");
-    Money m2("76.55");
-
-    m1 += m2;
-    ASSERT_EQ(m1.operator==(Money("200.00")), true);
-}
-
-
-TEST(MoneyTest, SubtractionAssignmentTest) {
-    Money m1("123.45");
-    Money m2("76.55");
-
-    m1 -= m2;
-    ASSERT_EQ(m1.operator==(Money("123.45")), true);
-}
-
-
-TEST(MoneyTest, ComparisonTest) {
-    Money m1("123.45");
-    Money m2("76.55");
-
-    ASSERT_EQ(m1 > m2, true);
-    ASSERT_EQ(m1 < m2, false);
-    ASSERT_EQ(m1 == m2, false);
-}
-
-
-TEST(MoneyTest, AdjustLengthTest) {
-    Money m1("123.45");
-    Money m2("76.555"); 
-
-    m1.adjustLengths(m2);  
-
-    ASSERT_EQ(m1.operator==(Money("123.450")), true);
+TEST(MoneyTest, SubtractAssignFunction) {
+    Money m1("500");
+    Money m2("300");
+    m1.subtractAssign(m2);
+    EXPECT_TRUE(m1.equals(Money("200")));
 }

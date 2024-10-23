@@ -11,29 +11,29 @@ public:
     Money(const std::string &t);
     Money(const Money &other);
     Money(Money &&other) noexcept;
-    
+
     ~Money();
+    Money& operator=(const Money &other) = delete;
 
-    Money &operator=(const Money &other);
-    Money &operator=(Money &&other) noexcept;
+    void assign(const Money &other);
+    void moveAssign(Money &&other) noexcept;
 
-    Money operator+(const Money &other) const;
-    Money &operator+=(const Money &other);
-    Money operator-(const Money &other) const;
-    Money &operator-=(const Money &other);
+    Money add(const Money &other) const;
+    void addAssign(const Money &other);
+    Money subtract(const Money &other) const;
+    void subtractAssign(const Money &other);
 
-    bool operator==(const Money &other) const;
-    bool operator<(const Money &other) const;
-    bool operator>(const Money &other) const;
-    
+    bool equals(const Money &other) const;
+    bool lessThan(const Money &other) const;
+    bool greaterThan(const Money &other) const;
+
     void printM() const;
 
-    
-    void adjustLengths(Money &other) ;
+    void adjustLengths(Money &other);
+
 private:
     unsigned char *data;
-    unsigned int len;
-
+    size_t len;
 };
 
 #endif

@@ -11,9 +11,11 @@ FetchContent_Declare(
   GIT_REPOSITORY https://github.com/google/googletest.git
   GIT_TAG release-1.12.1  
 )
-
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /Wall /Zi /fsanitize=address")
 
 FetchContent_MakeAvailable(googletest)
+set(ENV{LC_ALL} "en_US.UTF-8")
+set(ENV{LANG} "en_US.UTF-8")
 
 enable_testing()
 
