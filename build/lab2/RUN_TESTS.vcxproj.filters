@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="F:\Dokument\program\CPP\OOP\build\CMakeFiles\beb53b221b06d16527ed23bd0ed6dd6f\RUN_TESTS_force.rule">
+    <CustomBuild Include="F:\Dokument\program\CPP\OOP\build\lab2\CMakeFiles\beb53b221b06d16527ed23bd0ed6dd6f\RUN_TESTS_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{A477EFA8-D3A8-3226-A694-D39C09E3F942}</UniqueIdentifier>
+      <UniqueIdentifier>{C339D882-6E19-3515-AF71-1B93FB039222}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

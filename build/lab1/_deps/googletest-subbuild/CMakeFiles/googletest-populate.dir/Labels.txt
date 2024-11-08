@@ -1,0 +1,14 @@
+# Target labels
+ googletest-populate
+# Source files and their labels
+F:/Dokument/program/CPP/OOP/build/lab1/_deps/googletest-subbuild/CMakeFiles/googletest-populate
+F:/Dokument/program/CPP/OOP/build/lab1/_deps/googletest-subbuild/CMakeFiles/ddd78624b0a84fa9ada54d15d7a72d05/googletest-populate.rule
+F:/Dokument/program/CPP/OOP/build/lab1/_deps/googletest-subbuild/CMakeFiles/3a2758590f1b35afecbb34b8386678c1/googletest-populate-complete.rule
+F:/Dokument/program/CPP/OOP/build/lab1/_deps/googletest-subbuild/CMakeFiles/a5848af974943dbcc5f11240097b1952/googletest-populate-build.rule
+F:/Dokument/program/CPP/OOP/build/lab1/_deps/googletest-subbuild/CMakeFiles/a5848af974943dbcc5f11240097b1952/googletest-populate-configure.rule
+F:/Dokument/program/CPP/OOP/build/lab1/_deps/googletest-subbuild/CMakeFiles/a5848af974943dbcc5f11240097b1952/googletest-populate-download.rule
+F:/Dokument/program/CPP/OOP/build/lab1/_deps/googletest-subbuild/CMakeFiles/a5848af974943dbcc5f11240097b1952/googletest-populate-install.rule
+F:/Dokument/program/CPP/OOP/build/lab1/_deps/googletest-subbuild/CMakeFiles/a5848af974943dbcc5f11240097b1952/googletest-populate-mkdir.rule
+F:/Dokument/program/CPP/OOP/build/lab1/_deps/googletest-subbuild/CMakeFiles/a5848af974943dbcc5f11240097b1952/googletest-populate-patch.rule
+F:/Dokument/program/CPP/OOP/build/lab1/_deps/googletest-subbuild/CMakeFiles/a5848af974943dbcc5f11240097b1952/googletest-populate-test.rule
+F:/Dokument/program/CPP/OOP/build/lab1/_deps/googletest-subbuild/CMakeFiles/a5848af974943dbcc5f11240097b1952/googletest-populate-update.rule

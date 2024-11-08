@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{D653F4F0-2C05-3299-A83B-AFE48985E1B7}</ProjectGuid>
+    <ProjectGuid>{7CAC0145-2FEB-3435-808C-4434CF787A63}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -125,7 +125,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="F:\Dokument\program\CPP\OOP\build\CMakeFiles\beb53b221b06d16527ed23bd0ed6dd6f\INSTALL_force.rule">
+    <CustomBuild Include="F:\Dokument\program\CPP\OOP\build\lab2\CMakeFiles\beb53b221b06d16527ed23bd0ed6dd6f\INSTALL_force.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
@@ -189,14 +189,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="F:\Dokument\program\CPP\OOP\build\ZERO_CHECK.vcxproj">
-      <Project>{125A0087-A3B6-3BF2-BC6E-2628624915ED}</Project>
+    <ProjectReference Include="F:\Dokument\program\CPP\OOP\build\lab2\ZERO_CHECK.vcxproj">
+      <Project>{BDDB32C3-7672-3B88-A4FE-0F4149E7A439}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
     <ProjectReference Include="F:\Dokument\program\CPP\OOP\build\lab2\ALL_BUILD.vcxproj">
-      <Project>{327D62A4-EB2B-387C-8A2D-B0889A871321}</Project>
+      <Project>{6A616F2F-2FB8-3620-A2AD-6242AA85145F}</Project>
       <Name>ALL_BUILD</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
