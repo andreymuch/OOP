@@ -30,30 +30,23 @@ Pentagon::operator double()const{
     return area;
 }
 
-Pentagon& Pentagon::operator=(const Pentagon& other){
+Pentagon& Pentagon::operator=(const Pentagon& other) {
     if (this != &other) {
-        const Pentagon* otherPentagon = dynamic_cast<const Pentagon*>(&other);
-        if (otherPentagon) {
-            side = otherPentagon->side;
-        } else {
-            throw std::invalid_argument("Pentagon Eror");
-        }
+        side = other.side;
     }
     return *this;
 }
 
-Pentagon& Pentagon::operator=(Pentagon&& other) noexcept{
+Pentagon& Pentagon::operator=(Pentagon&& other) noexcept {
     if (this != &other) {
-        Pentagon& otherPentagon = static_cast<Pentagon&>(other);
-        side = std::move(otherPentagon.side);
-        otherPentagon.side = 0.0;
+        side = std::move(other.side);
+        other.side = 0.0;
     }
     return *this;
 }
 
-bool Pentagon::operator==(const Pentagon& other)const{
-    const Pentagon* otherPentagon = dynamic_cast<const Pentagon*>(&other);
-    return otherPentagon && side == otherPentagon->side;
+bool Pentagon::operator==(const Pentagon& other) const {
+    return side == other.side;
 }
 
 void Pentagon::printVertices(std::ostream& os) const {

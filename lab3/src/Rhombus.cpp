@@ -26,34 +26,31 @@ Rhombus::operator double()const{
     return 0.5 * d1 * d2;
 }
 
-Rhombus& Rhombus::operator=(const Rhombus& other){
+Rhombus& Rhombus::operator=(const Rhombus& other) {
     if (this != &other) {
-        const Rhombus* otherRhombus = dynamic_cast<const Rhombus*>(&other);
-        if (otherRhombus) {
-            d1 = otherRhombus->d1;
-            d2 = otherRhombus->d2;
-        } else {
-            throw std::invalid_argument("Rhombus Eror");
-        }
+        d1 = other.d1;
+        d2 = other.d2;
     }
     return *this;
 }
 
-Rhombus& Rhombus::operator=(Rhombus&& other) noexcept{
+
+Rhombus& Rhombus::operator=(Rhombus&& other) noexcept {
     if (this != &other) {
-        Rhombus& otherRhombus = static_cast<Rhombus&>(other);
-        d1 = std::move(otherRhombus.d1);
-        d2 = std::move(otherRhombus.d2);
-        otherRhombus.d1 = 0.0;
-        otherRhombus.d2 = 0.0;
+        d1 = std::move(other.d1);
+        d2 = std::move(other.d2);
+
+        other.d1 = 0.0;
+        other.d2 = 0.0;
     }
     return *this;
 }
 
-bool Rhombus::operator==(const Rhombus& other)const{
-    const Rhombus* otherRhombus = dynamic_cast<const Rhombus*>(&other);
-    return otherRhombus && d1 == otherRhombus->d1 && d2 == otherRhombus->d2;
+
+bool Rhombus::operator==(const Rhombus& other) const {
+    return d1 == other.d1 && d2 == other.d2;
 }
+
 
 void Rhombus::printVertices(std::ostream& os) const{
         os << "координаты: "

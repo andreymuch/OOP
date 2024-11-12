@@ -39,25 +39,23 @@ Trapezoid& Trapezoid::operator=(const Trapezoid& other) {
     }
     return *this;
 }
-
 Trapezoid& Trapezoid::operator=(Trapezoid&& other) noexcept {
     if (this != &other) {
-        Trapezoid& otherTrapezoid = static_cast<Trapezoid&>(other);
-        a = std::move(otherTrapezoid.a);
-        b = std::move(otherTrapezoid.b);
-        h = std::move(otherTrapezoid.h);
-
-        otherTrapezoid.a = 0.0;
-        otherTrapezoid.b = 0.0;
-        otherTrapezoid.h = 0.0;
+        a = std::move(other.a);
+        b = std::move(other.b);
+        h = std::move(other.h);
+        other.a = 0.0;
+        other.b = 0.0;
+        other.h = 0.0;
     }
     return *this;
 }
 
+
 bool Trapezoid::operator==(const Trapezoid& other) const {
-    const Trapezoid* otherTrapezoid = dynamic_cast<const Trapezoid*>(&other);
-    return otherTrapezoid && a == otherTrapezoid->a && b == otherTrapezoid->b && h == otherTrapezoid->h;
+    return a == other.a && b == other.b && h == other.h;
 }
+
 
 void  Trapezoid::printVertices(std::ostream& os) const{
     double halfBase1 = a / 2;
