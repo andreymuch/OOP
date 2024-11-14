@@ -23,3 +23,7 @@ F:/Dokument/program/CPP/OOP/build/lab2/CMakeFiles/lab2.dir
 F:/Dokument/program/CPP/OOP/build/lab2/CMakeFiles/RUN_TESTS.dir
 F:/Dokument/program/CPP/OOP/build/lab2/CMakeFiles/INSTALL.dir
 F:/Dokument/program/CPP/OOP/build/lab2/CMakeFiles/ALL_BUILD.dir
+F:/Dokument/program/CPP/OOP/build/lab3/CMakeFiles/lab3.dir
+F:/Dokument/program/CPP/OOP/build/lab3/CMakeFiles/RUN_TESTS.dir
+F:/Dokument/program/CPP/OOP/build/lab3/CMakeFiles/INSTALL.dir
+F:/Dokument/program/CPP/OOP/build/lab3/CMakeFiles/ALL_BUILD.dir

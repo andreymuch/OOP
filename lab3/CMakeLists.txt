@@ -7,12 +7,12 @@ set(SRC_FILES
     src/Pentagon.cpp
     src/Rhombus.cpp
     src/Trapezoid.cpp
-    src/main.cpp
 )
-add_executable(lab3 ${SRC_FILES} test_main.cpp)
+add_executable(lab3 ${SRC_FILES} src/main.cpp)
+add_executable(lab3_test ${SRC_FILES} test_main.cpp)
+target_link_libraries(lab3)
+target_link_libraries(lab3_test gtest gtest_main) 
 
-target_link_libraries(lab3 gtest gtest_main)
-
-add_test(NAME Lab3Test COMMAND lab3)
+add_test(NAME Lab3Test COMMAND lab3_test)
 set(ENV{LC_ALL} "en_US.UTF-8")
 set(ENV{LANG} "en_US.UTF-8")

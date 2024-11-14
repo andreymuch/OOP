@@ -37,8 +37,8 @@ Rhombus& Rhombus::operator=(const Rhombus& other) {
 
 Rhombus& Rhombus::operator=(Rhombus&& other) noexcept {
     if (this != &other) {
-        d1 = std::move(other.d1);
-        d2 = std::move(other.d2);
+        d1 = other.d1;
+        d2 = other.d2;
 
         other.d1 = 0.0;
         other.d2 = 0.0;

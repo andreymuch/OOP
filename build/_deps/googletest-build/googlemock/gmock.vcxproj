@@ -34,21 +34,25 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
+    <EnableAsan>true</EnableAsan>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
+    <EnableAsan>true</EnableAsan>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
+    <EnableAsan>true</EnableAsan>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
+    <EnableAsan>true</EnableAsan>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -79,7 +83,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>F:\Dokument\program\CPP\OOP\build\_deps\googletest-src\googlemock\include;F:\Dokument\program\CPP\OOP\build\_deps\googletest-src\googlemock;F:\Dokument\program\CPP\OOP\build\_deps\googletest-src\googletest\include;F:\Dokument\program\CPP\OOP\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) -J -utf-8</AdditionalOptions>
+      <AdditionalOptions>%(AdditionalOptions) /fsanitize=address -J -utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <BufferSecurityCheck>true</BufferSecurityCheck>
@@ -122,9 +126,9 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>F:\Dokument\program\CPP\OOP\build\_deps\googletest-src\googlemock\include;F:\Dokument\program\CPP\OOP\build\_deps\googletest-src\googlemock;F:\Dokument\program\CPP\OOP\build\_deps\googletest-src\googletest\include;F:\Dokument\program\CPP\OOP\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) -J -utf-8</AdditionalOptions>
+      <AdditionalOptions>%(AdditionalOptions) /fsanitize=address -J -utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4251;4275;4702</DisableSpecificWarnings>
@@ -165,9 +169,9 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>F:\Dokument\program\CPP\OOP\build\_deps\googletest-src\googlemock\include;F:\Dokument\program\CPP\OOP\build\_deps\googletest-src\googlemock;F:\Dokument\program\CPP\OOP\build\_deps\googletest-src\googletest\include;F:\Dokument\program\CPP\OOP\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) -J -utf-8</AdditionalOptions>
+      <AdditionalOptions>%(AdditionalOptions) /fsanitize=address -J -utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4251;4275;4702</DisableSpecificWarnings>
@@ -208,9 +212,9 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>F:\Dokument\program\CPP\OOP\build\_deps\googletest-src\googlemock\include;F:\Dokument\program\CPP\OOP\build\_deps\googletest-src\googlemock;F:\Dokument\program\CPP\OOP\build\_deps\googletest-src\googletest\include;F:\Dokument\program\CPP\OOP\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) -J -utf-8</AdditionalOptions>
+      <AdditionalOptions>%(AdditionalOptions) /fsanitize=address -J -utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4251;4275;4702</DisableSpecificWarnings>

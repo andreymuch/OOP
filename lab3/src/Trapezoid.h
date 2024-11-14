@@ -21,6 +21,6 @@ public:
     Trapezoid& operator=(Trapezoid&& other) noexcept;
     bool operator==(const Trapezoid& other)const ;
     void printVertices(std::ostream& os) const override;
-    
-    friend std::ostream& operator<<(std::ostream& os, const Trapezoid& fig);;
+
 };
+std::ostream& operator<<(std::ostream& os, const Trapezoid& fig);

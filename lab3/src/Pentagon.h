@@ -21,5 +21,6 @@ public:
     Pentagon& operator=(Pentagon&& other) noexcept ;
     bool operator==(const Pentagon& other) const;
     void printVertices(std::ostream& os) const override;
-    friend std::ostream& operator<<(std::ostream& os, const Pentagon& fig);
+
 };
+std::ostream& operator<<(std::ostream& os, const Pentagon& fig);

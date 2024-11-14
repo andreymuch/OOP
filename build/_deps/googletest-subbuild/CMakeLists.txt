@@ -19,9 +19,9 @@ project(googletest-populate NONE)
 # Pass through things we've already detected in the main project to avoid
 # paying the cost of redetecting them again in ExternalProject_Add()
 set(GIT_EXECUTABLE [==[D:/Program Files(D)/Git/cmd/git.exe]==])
-set(GIT_VERSION_STRING [==[2.46.2.windows.1]==])
+set(GIT_VERSION_STRING [==[2.47.0.windows.2]==])
 set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
-  [==[D:/Program Files(D)/Git/cmd/git.exe;2.46.2.windows.1]==]
+  [==[D:/Program Files(D)/Git/cmd/git.exe;2.47.0.windows.2]==]
 )
 
 

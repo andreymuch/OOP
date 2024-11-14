@@ -21,6 +21,6 @@ public:
     Rhombus& operator=(Rhombus&& other) noexcept;
     bool operator==(const Rhombus& other) const;
     void printVertices(std::ostream& os) const;
-    friend std::ostream& operator<<(std::ostream& os, const Rhombus& fig);;
 
 };
+std::ostream& operator<<(std::ostream& os, const Rhombus& fig);

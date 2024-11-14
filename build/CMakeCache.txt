@@ -25,6 +25,9 @@ CMAKE_AR:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools
 // else will be ignored.
 CMAKE_CONFIGURATION_TYPES:STRING=Debug;Release;MinSizeRel;RelWithDebInfo
 
+//No help, variable specified on the command line.
+CMAKE_CXX_COMPILER:STRING=cl.exe
+
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=/DWIN32 /D_WINDOWS /GR /EHsc
 
@@ -42,6 +45,9 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=/Zi /O2 /Ob1 /DNDEBUG
 
 //Libraries linked by default with all C++ applications.
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+
+//No help, variable specified on the command line.
+CMAKE_C_COMPILER:STRING=cl.exe
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=/DWIN32 /D_WINDOWS
@@ -75,6 +81,9 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=/INCREMENTAL:NO
 
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
+
+//No help, variable specified on the command line.
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
 
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=F:/Dokument/program/CPP/OOP/build/CMakeFiles/pkgRedirects
@@ -297,6 +306,15 @@ Lab2_IS_TOP_LEVEL:STATIC=OFF
 Lab2_SOURCE_DIR:STATIC=F:/Dokument/program/CPP/OOP/lab2
 
 //Value Computed by CMake
+Lab3_BINARY_DIR:STATIC=F:/Dokument/program/CPP/OOP/build/lab3
+
+//Value Computed by CMake
+Lab3_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Lab3_SOURCE_DIR:STATIC=F:/Dokument/program/CPP/OOP/lab3
+
+//Value Computed by CMake
 OOP_BINARY_DIR:STATIC=F:/Dokument/program/CPP/OOP/build
 
 //Value Computed by CMake
@@ -477,7 +495,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib

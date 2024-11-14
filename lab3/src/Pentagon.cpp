@@ -23,6 +23,7 @@ void Pentagon::print(std::ostream& os)const{
 
 void Pentagon::read(std::istream& is) {
     is >> side;
+    R = side / (2 * sin(atan(1)*4 / 5)); 
 }
 
 Pentagon::operator double()const{
@@ -33,13 +34,15 @@ Pentagon::operator double()const{
 Pentagon& Pentagon::operator=(const Pentagon& other) {
     if (this != &other) {
         side = other.side;
+        R = side / (2 * sin(atan(1)*4 / 5)); 
     }
     return *this;
 }
 
 Pentagon& Pentagon::operator=(Pentagon&& other) noexcept {
     if (this != &other) {
-        side = std::move(other.side);
+        side = other.side;
+        R = side / (2 * sin(atan(1)*4 / 5)); 
         other.side = 0.0;
     }
     return *this;

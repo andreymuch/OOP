@@ -5,14 +5,29 @@
 #include "Pentagon.h"
 #include "Array.h"
 
+void Array::resize(size_t newCapacity) {
+    Figure** newFigures = new Figure* [newCapacity];
+        for (size_t i = 0; i < newCapacity; ++i) {
+            newFigures[i] = figures[i];
+        }
+        for (size_t i = 0; i < size; ++i) {
+            delete figures[i];
+        }
+        delete figures;
+        figures = newFigures;
+        capacity = newCapacity;
+        
+    }
+
 Array::Array() : size(0), capacity(10) {
-    figures = std::make_unique<Figure*[]>(capacity);
+    figures = new Figure*[capacity];
 }
 
 Array::~Array() {
     for (size_t i = 0; i < size; ++i) {
         delete figures[i];
     }
+    delete figures;
 }
 
 void  Array::add(Figure* fig) {

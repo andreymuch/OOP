@@ -15,7 +15,7 @@ TEST(TrapezoidTest, CopyConstructor) {
 TEST(TrapezoidTest, MoveConstructor) {
     Trapezoid trap1(3.0, 4.0, 5.0);
     Trapezoid trap2 = std::move(trap1);
-    EXPECT_DOUBLE_EQ(trap2.operator double(), 1.0);
+    EXPECT_DOUBLE_EQ(trap2.operator double(), 17.5);
 }
 
 TEST(TrapezoidTest, AssignmentOperator) {
@@ -29,7 +29,7 @@ TEST(TrapezoidTest, MoveAssignmentOperator) {
     Trapezoid trap1(3.0, 4.0, 5.0);
     Trapezoid trap2;
     trap2 = std::move(trap1);
-    EXPECT_DOUBLE_EQ(trap2.operator double(), 1.0);
+    EXPECT_DOUBLE_EQ(trap2.operator double(), 17.5);
 }
 
 TEST(RhombusTest, CopyConstructor) {
@@ -40,7 +40,7 @@ TEST(RhombusTest, CopyConstructor) {
 TEST(RhombusTest, MoveConstructor) {
     Rhombus rhombus1(4.0, 5.0);
     Rhombus rhombus2 = std::move(rhombus1);
-   EXPECT_DOUBLE_EQ(rhombus2.operator double(), 1.0);
+   EXPECT_DOUBLE_EQ(rhombus2.operator double(), 10.0);
 }
 
 TEST(RhombusTest, AssignmentOperator) {
@@ -54,7 +54,7 @@ TEST(RhombusTest, MoveAssignmentOperator) {
     Rhombus rhombus1(4.0, 5.0);
     Rhombus rhombus2;
     rhombus2 = std::move(rhombus1);
-    EXPECT_DOUBLE_EQ(rhombus2.operator double(), 1.0);
+    EXPECT_DOUBLE_EQ(rhombus2.operator double(), 10.0);
 }
 
 TEST(PentagonTest, CopyConstructor) {
@@ -66,7 +66,7 @@ TEST(PentagonTest, CopyConstructor) {
 TEST(PentagonTest, MoveConstructor) {
     Pentagon pentagon1(5.0);
     Pentagon pentagon2 = std::move(pentagon1);
-    EXPECT_DOUBLE_EQ(pentagon2.operator double(), 1.0);
+    EXPECT_DOUBLE_EQ(pentagon2.operator double(), 43.01193501472418);
 }
 
 TEST(PentagonTest, AssignmentOperator) {
@@ -80,7 +80,7 @@ TEST(PentagonTest, MoveAssignmentOperator) {
     Pentagon pentagon1(5.0);
     Pentagon pentagon2;
     pentagon2 = std::move(pentagon1);
-    EXPECT_DOUBLE_EQ(pentagon2.operator double(), 1.0);
+    EXPECT_DOUBLE_EQ(pentagon2.operator double(), 43.01193501472418);
 }
 
 TEST(ArrayTest, AddFigures) {

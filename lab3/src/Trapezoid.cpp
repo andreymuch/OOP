@@ -41,12 +41,12 @@ Trapezoid& Trapezoid::operator=(const Trapezoid& other) {
 }
 Trapezoid& Trapezoid::operator=(Trapezoid&& other) noexcept {
     if (this != &other) {
-        a = std::move(other.a);
-        b = std::move(other.b);
-        h = std::move(other.h);
-        other.a = 0.0;
-        other.b = 0.0;
-        other.h = 0.0;
+        a = other.a;
+        b = other.b;
+        h = other.h;
+        other.a = 0;
+        other.b = 0;
+        other.h = 0;
     }
     return *this;
 }

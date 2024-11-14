@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <string>
-#include "./src/Money.h"
+#include "src/Money.h"
 
 TEST(MoneyTest, ConstructorWithString) {
     std::string str = "100";
@@ -22,7 +22,7 @@ TEST(MoneyTest, AddFunction) {
     Money m1("100");
     Money m2("200");
     Money result = m1.add(m2);
-    EXPECT_TRUE(result.equals(Money("300")));
+    EXPECT_TRUE(result.equals(Money("300.00")));
 }
 TEST(MoneyTest, SubtractFunction) {
     Money m1("500");
