@@ -1,0 +1,4 @@
+Event: Орк Orc1 атакует Bear Bear1!
+
+Event: Орк Orc1 убивает медведя Bear1!
+

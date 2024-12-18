@@ -19,9 +19,6 @@
     <ClCompile Include="F:\Dokument\program\CPP\OOP\lab3\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\Dokument\program\CPP\OOP\lab3\test_main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="F:\Dokument\program\CPP\OOP\lab3\CMakeLists.txt" />

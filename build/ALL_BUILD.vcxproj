@@ -197,9 +197,41 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{87582201-0AB5-3FA0-9F35-D971F659948E}</Project>
       <Name>lab2</Name>
     </ProjectReference>
+    <ProjectReference Include="F:\Dokument\program\CPP\OOP\build\lab2\lab2_test.vcxproj">
+      <Project>{55CA446E-85A5-3073-B2BA-284EE6B51807}</Project>
+      <Name>lab2_test</Name>
+    </ProjectReference>
     <ProjectReference Include="F:\Dokument\program\CPP\OOP\build\lab3\lab3.vcxproj">
       <Project>{BB55E2AA-BAEE-34D7-BB3E-E6607A421DF6}</Project>
       <Name>lab3</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Dokument\program\CPP\OOP\build\lab3\lab3_test.vcxproj">
+      <Project>{E0F1B316-09D2-3043-B685-E0C9E791577E}</Project>
+      <Name>lab3_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Dokument\program\CPP\OOP\build\lab4\lab4.vcxproj">
+      <Project>{405CFF69-2E8C-355B-9D4B-7C243E8B0D75}</Project>
+      <Name>lab4</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Dokument\program\CPP\OOP\build\lab4\lab4_test.vcxproj">
+      <Project>{5607E2E8-9D84-308D-8763-377FABC34842}</Project>
+      <Name>lab4_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Dokument\program\CPP\OOP\build\lab5\lab5.vcxproj">
+      <Project>{274D28FA-9899-37FA-BF7A-5D8949A9DAD8}</Project>
+      <Name>lab5</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Dokument\program\CPP\OOP\build\lab5\lab5_test.vcxproj">
+      <Project>{16734C50-239F-37FB-B9A6-5C1E2C9EC904}</Project>
+      <Name>lab5_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Dokument\program\CPP\OOP\build\lab6\lab6.vcxproj">
+      <Project>{88C2F845-52D2-3A67-83BD-B781BF4AAC3F}</Project>
+      <Name>lab6</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Dokument\program\CPP\OOP\build\lab6\lab6_test.vcxproj">
+      <Project>{498127A8-8DCF-3D11-88AA-AE5907ED614A}</Project>
+      <Name>lab6_test</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

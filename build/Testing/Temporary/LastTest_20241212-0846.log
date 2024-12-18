@@ -1,0 +1,42 @@
+Start testing: Dec 12 20:01 RTZ 2 (зима)
+----------------------------------------------------------
+6/6 Testing: Lab6Test
+6/6 Test: Lab6Test
+Command: "F:/Dokument/program/CPP/OOP/build/lab6/Debug/lab6_test.exe"
+Directory: F:/Dokument/program/CPP/OOP/build/lab6
+"Lab6Test" start time: Dec 12 20:01 RTZ 2 (зима)
+Output:
+----------------------------------------------------------
+[==========] Running 3 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from NPCFactoryTest
+[ RUN      ] NPCFactoryTest.CreateNPC
+[       OK ] NPCFactoryTest.CreateNPC (0 ms)
+[----------] 1 test from NPCFactoryTest (0 ms total)
+
+[----------] 1 test from BattleVisitorTest
+[ RUN      ] BattleVisitorTest.Engage
+Event: Орк Orc1 атакует Bear Bear1!
+
+Event: Орк Orc1 убивает медведя Bear1!
+
+[       OK ] BattleVisitorTest.Engage (0 ms)
+[----------] 1 test from BattleVisitorTest (0 ms total)
+
+[----------] 1 test from FileManagerTest
+[ RUN      ] FileManagerTest.SaveAndLoad
+[       OK ] FileManagerTest.SaveAndLoad (1 ms)
+[----------] 1 test from FileManagerTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 3 test suites ran. (3 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"Lab6Test" end time: Dec 12 20:01 RTZ 2 (зима)
+"Lab6Test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 12 20:01 RTZ 2 (зима)

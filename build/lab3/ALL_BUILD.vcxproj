@@ -177,6 +177,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{BB55E2AA-BAEE-34D7-BB3E-E6607A421DF6}</Project>
       <Name>lab3</Name>
     </ProjectReference>
+    <ProjectReference Include="F:\Dokument\program\CPP\OOP\build\lab3\lab3_test.vcxproj">
+      <Project>{E0F1B316-09D2-3043-B685-E0C9E791577E}</Project>
+      <Name>lab3_test</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

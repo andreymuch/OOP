@@ -1,0 +1,105 @@
+Event: Orc Орк fights Bear медведь!
+
+Event: Orc Орк kills Bear медведь!
+
+Event: Battle completed.
+Event: Орк Билли атакует Bear мишка!
+
+Event: Орк Билли убивает медведя мишка!
+
+Event: Орк billi атакует Bear Miha!
+
+Event: Орк billi убивает медведя Miha!
+
+Event: Орк billi атакует Bear Miha!
+
+Event: Орк billi убивает медведя Miha!
+
+Event: Орк billi атакует Bear Miha!
+
+Event: Орк billi убивает медведя Miha!
+
+Event: Орк Billi атакует Bear Miha!
+
+Event: Орк Billi убивает медведя Miha!
+
+Event: Орк billi атакует Bear Miha!
+
+Event: Орк billi убивает медведя Miha!
+
+Event: Орк Billi атакует Bear Miha!
+
+Event: Орк Billi убивает медведя Miha!
+
+Event: Battle completed.
+Event: Battle completed.
+Event: Battle completed.
+Event: Battle completed.
+Event: Battle completed.
+Event: Battle completed.
+Event: Орк o1 атакует Orc o2!
+
+Event: Орк o1 убивает орка o2!
+
+Event: Орк o2 атакует Orc o1!
+
+Event: Орк o2 убивает орка o1!
+
+Event: Орк o1 атакует Orc o-2!
+
+Event: Орк o1 убивает орка o-2!
+
+Event: Орк o-2 атакует Orc o1!
+
+Event: Орк o-2 убивает орка o1!
+
+Event: Орк o3 атакует Orc o4!
+
+Event: Орк o3 убивает орка o4!
+
+Event: Орк o4 атакует Orc o3!
+
+Event: Орк o4 убивает орка o3!
+
+Event: Battle completed.
+Event: Орк o1 атакует Orc o2!
+
+Event: Орк o1 убивает орка o2!
+
+Event: Орк o2 атакует Orc o1!
+
+Event: Орк o2 убивает орка o1!
+
+Event: Battle completed.
+Event: Battle completed.
+Event: Орк John атакует Bear Misha!
+
+Event: Орк John убивает медведя Misha!
+
+Event: Battle completed.
+Event: Игра сохранена.
+Event: Орк щ-1 атакует Bear щ2!
+
+Event: Орк щ-1 убивает медведя щ2!
+
+Event: Battle completed.
+Event: Игра загружена.
+Event: Орк щ-1 атакует Bear щ2!
+
+Event: Орк щ-1 убивает медведя щ2!
+
+Event: Battle completed.
+Event: Игра сохранена.
+Event: Орк o1 атакует Orc o2!
+
+Event: Орк o1 убивает орка o2!
+
+Event: Орк o2 атакует Orc o1!
+
+Event: Орк o2 убивает орка o1!
+
+Event: Battle completed.
+Event: Орк Orc1 атакует Bear Bear1!
+
+Event: Орк Orc1 убивает медведя Bear1!
+

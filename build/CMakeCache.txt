@@ -315,6 +315,33 @@ Lab3_IS_TOP_LEVEL:STATIC=OFF
 Lab3_SOURCE_DIR:STATIC=F:/Dokument/program/CPP/OOP/lab3
 
 //Value Computed by CMake
+Lab4_BINARY_DIR:STATIC=F:/Dokument/program/CPP/OOP/build/lab4
+
+//Value Computed by CMake
+Lab4_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Lab4_SOURCE_DIR:STATIC=F:/Dokument/program/CPP/OOP/lab4
+
+//Value Computed by CMake
+Lab5_BINARY_DIR:STATIC=F:/Dokument/program/CPP/OOP/build/lab5
+
+//Value Computed by CMake
+Lab5_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Lab5_SOURCE_DIR:STATIC=F:/Dokument/program/CPP/OOP/lab5
+
+//Value Computed by CMake
+Lab6_BINARY_DIR:STATIC=F:/Dokument/program/CPP/OOP/build/lab6
+
+//Value Computed by CMake
+Lab6_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Lab6_SOURCE_DIR:STATIC=F:/Dokument/program/CPP/OOP/lab6
+
+//Value Computed by CMake
 OOP_BINARY_DIR:STATIC=F:/Dokument/program/CPP/OOP/build
 
 //Value Computed by CMake
@@ -495,7 +522,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib

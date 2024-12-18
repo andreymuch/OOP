@@ -14,7 +14,7 @@ public:
     }
 
     bool canFight(const NPC& other) const {
-        return other.getType() == "Bear";
+        return true;
     }
     bool acceptFight(NPC& other) {
         if (canFight(other)) {

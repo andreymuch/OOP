@@ -1,0 +1,78 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "gmock::@0f7bb11d64f3678238c7"
+		},
+		{
+			"id" : "gmock_main::@0f7bb11d64f3678238c7"
+		},
+		{
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
+		},
+		{
+			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
+		},
+		{
+			"id" : "lab1::@e3a54a2ab40fd51109ef"
+		},
+		{
+			"id" : "lab2_test::@67615d46f9a62e8e5e39"
+		},
+		{
+			"id" : "lab2::@67615d46f9a62e8e5e39"
+		},
+		{
+			"id" : "lab3_test::@719c9ac8603c291eb7d1"
+		},
+		{
+			"id" : "lab3::@719c9ac8603c291eb7d1"
+		},
+		{
+			"id" : "lab4::@bd41e1cdb6be6fb5455e"
+		},
+		{
+			"id" : "lab4_test::@bd41e1cdb6be6fb5455e"
+		},
+		{
+			"id" : "lab5::@87e0f1ad21807149b7d0"
+		},
+		{
+			"id" : "lab5_test::@87e0f1ad21807149b7d0"
+		},
+		{
+			"id" : "lab6::@bf72dfb1f60f651826c3"
+		},
+		{
+			"id" : "lab6_test::@bf72dfb1f60f651826c3"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}
